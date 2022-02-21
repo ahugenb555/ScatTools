@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ScatTools</string>
+    <string name="scat_tap">Tap to roll</string>
+    <string name="scat_letter">Letter</string>
+    <string name="scat_play">Play</string>
+    <string name="scat_pause">Pause</string>
+    <string name="scat_reset">Reset</string>
+</resources>
