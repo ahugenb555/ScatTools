@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="scat_btn_height">36dp</dimen>
+    <dimen name="scat_bar_height">48dp</dimen>
+    <dimen name="scat_text_small">10dp</dimen>
+    <dimen name="scat_padding_small">12sp</dimen>
+</resources>
