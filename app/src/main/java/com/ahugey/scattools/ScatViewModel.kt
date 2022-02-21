@@ -39,7 +39,7 @@ class ScatViewModel(
                     }
                 }
                 for (die in 0..10) {
-                        timer.start()
+                    timer.start()
                 }
             }
             is ScatDieState.Rolling -> { }

@@ -11,7 +11,7 @@ import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
 
-    private var mBtnDie: MaterialButton? = null
+    private lateinit var mBtnDie: MaterialButton
     private lateinit var mViewModel: ScatViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,12 +25,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupObservers() {
         mViewModel.getViewState().observe(this, Observer { state ->
-            mBtnDie?.text = state.dieText.toString()
+            mBtnDie.text = state.dieText.toString()
         })
     }
 
     private fun setupListeners() {
-        mBtnDie?.setOnClickListener(
+        mBtnDie.setOnClickListener(
             View.OnClickListener { _ ->
                 mViewModel.onDieTapped()
             }
