@@ -53,7 +53,6 @@ class ScatViewModel(
             while (rng == index) {
                 rng = Random.nextInt(alphabet.size)
             }
-            return alphabet[rng]
         } else {
             rng = Random.nextInt(alphabet.size)
         }
