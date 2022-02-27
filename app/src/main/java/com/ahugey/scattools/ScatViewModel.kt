@@ -27,7 +27,7 @@ class ScatViewModel(
         when (state.dieState) {
             is ScatDieState.Stopped -> {
                 state.dieState = ScatDieState.Rolling()
-                val timer = object: CountDownTimer(1000, 100) {
+                val timer = object: CountDownTimer(2000, 100) {
                     override fun onTick(p0: Long) {
                         state.dieText = getNewDieText(state.dieText)
                         viewState.postValue(state)
@@ -38,9 +38,7 @@ class ScatViewModel(
                         viewState.postValue(state)
                     }
                 }
-                for (die in 0..10) {
-                    timer.start()
-                }
+                timer.start()
             }
             is ScatDieState.Rolling -> { }
         }
